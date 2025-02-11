@@ -62,7 +62,7 @@ FROM dimgeography
 JOIN dimreseller
 ON dimgeography.GeographyKey = dimreseller.GeographyKey
 JOIN factresellersales 
-ON dimreseller.ResellerKey = Factresellersales.ResellerKey
+ON dimreseller.ResellerKey = factresellersales.ResellerKey
 JOIN dimproduct
 ON factresellersales.productkey = dimproduct.ProductKey
 JOIN dimproductsubcategory
